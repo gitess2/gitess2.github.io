@@ -1,19 +1,9 @@
+/* Header */
+
 * {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-ser;
     margin: 0rem;
     border: 0;
-}
-body {
-    background-color: #15998e;
-}
-main {
-    aspect-ratio: 900/600;
-    background-position: center;
-    background-position: bottom;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
-    background-image: url('images/layered-waves-haikei.svg'); /* SVG from haikai.com */
 }
 header {
     text-align: center;
@@ -35,6 +25,38 @@ h1 > #header:hover {
 h1 {
     display: inline;
 }
-h2 {
-    
+
+/* Body grid */
+
+.container {
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    grid-column-gap: 2rem;
+    grid-template-rows: 10rem 10rem 10rem;
+}
+#tutorials {
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: row1-start;
+    grid-row-end: 1;
+}
+#lectures {
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: row2-start;
+    grid-row-end: 2;
+}
+#inspiration {
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: row3-start;
+    grid-row-end: 3;
+}
+main {
+    aspect-ratio: 900/600;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    background-image: url('images/layered-waves-haikei.svg'); /* SVG from haikai.com */
 }
