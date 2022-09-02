@@ -1,0 +1,40 @@
+* {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-ser;
+    margin: 0rem;
+    border: 0;
+}
+body {
+    background-color: #15998e;
+}
+main {
+    aspect-ratio: 900/600;
+    background-position: center;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    background-image: url('images/layered-waves-haikei.svg'); /* SVG from haikai.com */
+}
+header {
+    text-align: center;
+    background: #e5ddc8;
+    padding: 2rem;
+    height: 100%;
+    border: Solid #15998e;
+    border-width: 0 0 .4rem 0;
+}
+h1 > #header {
+    display: inline-block;
+    color: #45b08c;
+    font-size: 4rem;
+    text-decoration: none;
+}
+h1 > #header:hover {
+    color: #15998e;    
+}
+h1 {
+    display: inline;
+}
+h2 {
+    
+}
