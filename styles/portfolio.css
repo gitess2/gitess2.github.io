@@ -18,6 +18,9 @@ html[data-theme="dark"] {
     --footer-color: #1d1d26;
     --hover-opacity: 30%;
 }
+* {
+    box-sizing: border-box;
+  }
 body {
     background-color: var(--background-color);
 }

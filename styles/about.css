@@ -16,6 +16,9 @@ html[data-theme="dark"] {
     --hover-color-two: #5f6272;
     --footer-color: #1d1d26;
 }
+* {
+    box-sizing: border-box;
+  }
 body {
     background-color: var(--background-color);
 }
