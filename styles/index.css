@@ -19,7 +19,7 @@ html[data-theme="dark"] {
 body {
     background-color: var(--background-color);
 }
-@media (max-width: 930px) {
+@media (max-width: 1050px) {
     /* To-Do */
 }
 
@@ -118,7 +118,6 @@ li > a:hover {
 main {
     display: grid;
     grid-template-columns: 2fr 3fr 3fr 2fr;
-    white-space: nowrap;
     column-gap: 1rem;
     row-gap: 8rem;
 }
