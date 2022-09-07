@@ -128,3 +128,7 @@ footer {
     margin-top: 8rem;
     padding: 1rem;
 }
+html {
+    visibility: visible;
+    opacity: 1;
+}
