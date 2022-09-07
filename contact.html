@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap');
+        </style> 
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>For Now - Contact</title>
+        <style>
+            @import url(styles/contact.css);
+        </style>
+    </head>
+    <body>
+        <header>
+            <div>
+            <h1><a href="index.html">For Now</a></h1>
+            </div>
+            <div>
+                <ul>
+                    <li class="link"><a href="portfolio.html">Portfolio</a></li>
+                    <!-- <li class="link"><a href="posts.html">Posts</a></li> -->
+                    <li class="link"><a href="about.html">About</a></li>
+                    <li><a href=""><span class="grey">Contact</span></a></li>
+                </ul>
+            </div>
+            <div>
+                <button type="button" class="toggle"><span id="sun-too-small">☼</span> / ☽</button>
+            </div>
+        </header>
+        <main>
+            <div class="container">
+                <form action="contact.html">
+                  <label for="name">Name:</label>
+                  <br />
+                  <input type="text" id="fname" name="firstname" placeholder="Your name.." maxlength="30">
+                  <br />
+                  <label for="email">Email:</label>
+                  <br />
+                  <input type="email" id="email" name="email" placeholder="Your Email address.." maxlength="30">
+                  <br />
+                  <label for="subject">Subject:</label>
+                  <br />
+                  <textarea id="subject" name="subject" maxlength="800" placeholder="Write something.." style="height:200px"></textarea>
+                  <br />
+                  <input type="submit" value="Submit">
+                </form>
+              </div> 
+        </main>
+        <footer>
+            <p>Example</p>
+        </footer>
+    </body>
+    <script type="text/javascript" async src="external.js"></script>
+</html>

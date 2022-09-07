@@ -1,42 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
-   <head>
+    <head>
+    <style>
+            @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap');
+        </style> 
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-       <title>Tess' Homepage</title>       
-       <link rel="stylesheet" href="index.css">
-   </head>
-   <body>
-       <header>
-           <h1><a id="header" href="index.html">Tess' Homepage</a></h1>
-       </header> 
-       <main>
-            <div class="container">
-                <section id="tutorials">
-                    <h2>Tutorials</h2>
-                    <ul>
-                        <li><a href="tutorials/tutorial01/index.html">Tutorial 1</a></li>
-                    </ul>
-                </section>
-                <section id="lectures">
-                    <h2>Lectures</h2>
-                    <ul>
-                        <li><a href="lectures/lecture02/exercise/index.html">Lecture 2</a></li>
-                        <li><a href="lectures/lecture04/index.html">Lecture 4</a></li>
-                    </ul>
-                </section>
-                <section id="inspiration">
-                    <h2>Design Inspiration</h2>
-                    <ul>
-                        <li><a href="http://www.firewatchgame.com/">Firewatch Game</a>: Super strong color design and awesome use of parallax</li>
-                        <li><a href="https://accidentallywesanderson.com/">Accidental Wes Anderson</a>: Quirky and very Wes Anderson</li>
-                        <li><a href="https://hydrogen.shopify.dev/">Hydrogen</a>: Intense JS and bold colors and graphics</li>
-                        <li><a href="https://rax.is/">Ragnar Axelsson</a>: Simple wordpress blog that is very clean and effective</li>
-                        <li><a href="https://een-nul.com/?UTM_source=mycodelesswebsite">Een Nul</a>: Cool scrolling animations and interactive design</li>
-                    </ul>
-                </section>
+        <title>For Now</title>
+        <style>
+            @import url(styles/index.css);
+        </style>
+    </head>
+    <body>
+        <header>
+            <div>
+                <h1><a href="index.html">For Now</a></h1>
             </div>
+            <div>
+                <ul>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <!-- <li class="link"><a href="posts.html">Posts</a></li> -->
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div>
+                <button type="button" class="toggle"><span id="sun-too-small">☼</span> / ☽</button>
+            </div>
+        </header>
+        <main>
+            <div id="me">
+                <img id="portrait" src="images/me.jpg" alt="Portrait of myself" title="That's me!" />
+            </div>
+            <div id="description-me">
+                <p>
+                    <pre>
+My name is Tess Walker twinkle twinkle 
+blah blah blah Lorem ipsum dolor sit 
+amet, consectetur adipiscingelit, sed 
+do eiusmod tempor incididunt ut labore
+et dolore magna aliqua. Ut enim ad minim 
+veniam, quis nostrud exercitation. 
+This will obviously be workshopped..
+                    </pre>
+                    <a id="read-more" href="about.html"><button class="read-more">Read More</button></a>
+                </p>
+            </div>
+            <div class="slideshow">
+                <div class="slide">
+                    <div class="numbertext">1 / 4</div>
+                    <img src="images/iceland-1.png" style="width:60rem; height:48.5rem">
+                </div>
+                <div class="slide">
+                    <div class="numbertext">2 / 4</div>
+                    <img src="images/iceland-2.png" style="width:60rem; height:48.5rem">
+                </div>
+                <div class="slide">
+                    <div class="numbertext">3 / 4</div>
+                    <img src="images/iceland-3.png" style="width:60rem; height:48.5rem">
+                </div>
+                <div class="slide">
+                    <div class="numbertext">4 / 4</div>
+                    <img src="images/iceland-4.png" style="width:60rem; height:48.5rem">
+                </div>
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <br>
+            <script>
+                    let slideIndex = 1;
+                    showSlides(slideIndex);
+
+                    function plusSlides(n) {
+                    showSlides(slideIndex += n);
+                    }
+
+                    function currentSlide(n) {
+                    showSlides(slideIndex = n);
+                    }
+
+                    function showSlides(n) {
+                    let i;
+                    let slides = document.getElementsByClassName("slide");
+                    if (n > slides.length) {slideIndex = 1}
+                    if (n < 1) {slideIndex = slides.length}
+                    for (i = 0; i < slides.length; i++) {
+                        slides[i].style.display = "none";
+                    }
+                    slides[slideIndex-1].style.display = "block";
+                    }
+            </script>
         </main>
-   </body>
+        <footer>
+            <p>Example</p> <!--Includen back to top, copywrite, social media, etc etc etc etc etc etdteiwugdfjl-->
+        </footer>
+    </body>
+    <script type="text/javascript" async src="external.js"></script>
 </html>
