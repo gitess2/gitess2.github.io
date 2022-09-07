@@ -137,6 +137,10 @@ li > a:hover {
 a > img:hover {
     opacity: var(--hover-opacity)
 }
+.image {
+    text-align: center;
+}
+
 /* Footer */
 
 footer {
