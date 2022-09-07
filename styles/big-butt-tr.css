@@ -194,13 +194,30 @@ li > a:hover {
 
 /* Footer */
 
-footer {
+  footer {
     color: var(--primary-color);
     background-color: var(--footer-color);
     margin-left: -8px;
     margin-right: -8px;
     margin-bottom: -8px;
-    display: grid;
     margin-top: 8rem;
+    display: grid;
     padding: 1rem;
+    grid-template-columns: 1fr 3fr 1fr;
+    font-size: 14px;
+}
+.social {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    text-align: center;
+}
+#insta {
+    margin-left: 1rem;
+}
+.copyright {
+    text-align: center;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 2;
 }
