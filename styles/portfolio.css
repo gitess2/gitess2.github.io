@@ -24,10 +24,6 @@ html[data-theme="dark"] {
 body {
     background-color: var(--background-color);
 }
-@media (max-width: 930px) {
-    /* To-Do */
-}
-
 /* Header */
 
 header {
@@ -40,6 +36,11 @@ header {
     border-color: var(--primary-color);
     margin-top:  -8px;
 } 
+@media (max-width: 1050px) {
+    header {
+        grid-template-columns: 1fr;
+    }
+}
 header > div {
     align-self: center;
     justify-self: center;
