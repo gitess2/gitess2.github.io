@@ -148,3 +148,7 @@ footer {
     grid-row-start: 2;
     grid-row-end: 2;
 }
+html {
+    visibility: visible;
+    opacity: 1;
+}
