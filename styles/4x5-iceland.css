@@ -100,25 +100,21 @@ li > a:hover {
 /* Dark Mode */
 
 .toggle {
-    font-family: 'Source Code Pro', monospace;
-    font-size: 20px;
-    line-height: 1.3;
-    color: var(--primary-color);
-    background: none;
-    padding: 16px 30px;
-    cursor: pointer;
-    border: none;    
-    transition: 200ms transform ease-in-out;
-    vertical-align: middle;
-    font-weight: 600.0;
-  }
-#sun-too-small {
-    font-size: 1.9rem;
-    vertical-align: middle;    
+  font-family: 'Source Code Pro', monospace;
+  font-size: 30px;
+  line-height: 1.3;
+  color: var(--primary-color);
+  background: none;
+  padding: 16px 30px;
+  cursor: pointer;
+  border: none;    
+  transition: 200ms transform ease-in-out;
+  vertical-align: middle;
+  font-weight: 600.0;
 }
 .toggle:hover {
-    transform: scale(1.075);
-    color: var(--hover-color);
+  transform: scale(1.075);
+  color: var(--hover-color);
 }
 
 /* Main */

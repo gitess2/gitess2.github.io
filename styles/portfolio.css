@@ -102,7 +102,7 @@ li > a:hover {
 
 .toggle {
     font-family: 'Source Code Pro', monospace;
-    font-size: 20px;
+    font-size: 30px;
     line-height: 1.3;
     color: var(--primary-color);
     background: none;
@@ -113,10 +113,6 @@ li > a:hover {
     vertical-align: middle;
     font-weight: 600.0;
   }
-#sun-too-small {
-    font-size: 1.9rem;
-    vertical-align: middle;    
-}
 .toggle:hover {
     transform: scale(1.075);
     color: var(--hover-color);
