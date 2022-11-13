@@ -1,5 +1,3 @@
-import anime from 'animejs/lib/anime.es.js';
-
 const wrapper = document.getElementById("tiles");
 
 let columns = 0,
