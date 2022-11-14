@@ -1,3 +1,6 @@
+* {
+  margin: 0;
+}
 :root {
     --g1: #CC99FF;
     --g2: #A9D1F7;
@@ -17,7 +20,7 @@
     }
   }
   
-  body {
+  header {
     animation: background-pan 10s linear infinite;
     background: linear-gradient(
       to right,
@@ -33,7 +36,6 @@
       var(--g2),
       var(--g1)
     );
-    background-size: 200%;
     height: 100vh;
     overflow: hidden;
     margin: 0px;
@@ -41,29 +43,6 @@
 
   h1 {
     text-align: center;
-  }
-  
-  body.toggled {
-    animation: none;
-  }
-  
-  body.toggled > #title {
-    opacity: 0;
-  }
-  
-  body.toggled > #icon {
-    opacity: 1;
-  }
-  
-  body.toggled > #tiles > .tile:hover {
-    opacity: 0.1 !important;
-  }
-  
-  .centered {
-    left: 50%;
-    position: absolute;
-    top: 50%;
-    transform: translate(-50%, -50%);
   }
   
   #tiles {
@@ -94,6 +73,19 @@
   }
   
   #title {
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-family: "Rubik", sans-serif;
+    font-size: 6vw;
+    margin: 0px;
+    pointer-events: none;
+    width: 50vw;
+    z-index: 3;
+  }
+  h2 {
     color: white;
     font-family: "Rubik", sans-serif;
     font-size: 6vw;
@@ -101,22 +93,9 @@
     pointer-events: none;
     transition: opacity 1200ms ease;
     width: 50vw;
-    z-index: 3;
+    z-index: 1;
   }
   
-  #title > .fancy {
-    color: var(--g2);
-    font-family: 'Dancing Script', cursive;
-    font-size: 1.5em;
-    line-height: 0.9em;
-  }
-  /*
-  #icon {
-    color: rgba(255, 255, 255, 0.15);
-    font-size: 80vmin;
-    opacity: 0;
-    pointer-events: none;
-    transition: opacity 1200ms ease;
-    z-index: 1;                                               <---- !!!!!
-  } */
-  
+.textOutline {
+  text-shadow: 2px 2px 5px #CC99FF;                      
+}
