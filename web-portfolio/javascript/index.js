@@ -16,7 +16,7 @@ const handleOnClick = index => {
   anime({
     targets: ".tile",
     opacity: toggled ? 0 : 1,
-    delay: anime.stagger(50, {
+    delay: anime.stagger(55, {
       grid: [columns, rows],
       from: index
     })
@@ -41,20 +41,20 @@ const createTiles = quantity => {
   });
 }
 
-const createGrid = () => {
+const createGrid = (rowsvar) => {
   wrapper.innerHTML = "";
   
-  const size = document.body.clientWidth > 800 ? 100 : 50;
+  const size = 100
   
   columns = Math.floor(document.body.clientWidth / size);
   rows = Math.floor(document.body.clientHeight / size);
   
   wrapper.style.setProperty("--columns", columns);
-  wrapper.style.setProperty("--rows", rows);
+  wrapper.style.setProperty("--rows", rowsvar);
   
   createTiles(columns * rows);
 }
 
 createGrid();
 
-window.onresize = () => createGrid();
+window.onresize = () => createGrid(rows / 1.875); /* made rows var return it to original state */
