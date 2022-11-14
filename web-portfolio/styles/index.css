@@ -86,16 +86,25 @@
     z-index: 3;
   }
   h2 {
-    color: white;
-    font-family: "Rubik", sans-serif;
-    font-size: 6vw;
-    margin: 0px;
-    pointer-events: none;
-    transition: opacity 1200ms ease;
-    width: 50vw;
-    z-index: 1;
+    position: relative;
+    display: block;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top: -10rem;
+    width: 4rem;
+    z-index: 3;
+    filter: drop-shadow( 2px 2px 3px #CC99FF);
   }
-  
+
 .textOutline {
   text-shadow: 2px 2px 5px #CC99FF;                      
+}
+
+.fadeIn {
+  animation: fades 1.7s;
+}
+
+@keyframes fades {
+  0% { opacity: 0; }
+ 100% { opacity: 1; }
 }
