@@ -100,6 +100,35 @@ body {
  100% { opacity: 1; }
 } 
 
-main {
-  height: 100vh;
+/* second page */
+
+.qualification {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr, 2fr;
+  grid-template-rows: 3;
+  place-items: center;
+  align-content: center;
+  row-gap: 4rem;
+  background-color: #FFF5EE;
 } 
+
+#htmlIcon, #cssIcon, #jsIcon {
+  height: 150px;
+  width: 150px;
+  margin-left: 12rem;
+  margin-right: 1rem;
+}
+
+#htmlDesc, #cssDesc, #jsDesc {
+  font-size: 2rem;
+  grid-column: 2;
+  margin-right: 16rem;
+  margin-left: 1rem;
+  overflow-wrap: normal;
+  max-width: 8rem;
+}
+
+@media screen and (max-width: 900px) {
+  
+}
