@@ -53,14 +53,3 @@ const createGrid = () => {
 }
 
 createGrid();
-
-// Animated text
-
-anime({
-  targets: '.slideQualification',
-  translateX: 250,
-  direction: 'alternate',
-  delay: anime.stagger(100),
-  loop:true,
-  easing: 'cubicBezier(.37,1.53,.35,.84)'
-});

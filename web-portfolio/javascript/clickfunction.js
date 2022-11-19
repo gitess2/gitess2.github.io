@@ -16,13 +16,3 @@ document.querySelector('#rainbow').addEventListener('click', () => {
     document.querySelector('#arrow').classList.add('fadeIn');
     document.body.style.overflow = 'visible';
 }); 
-
-scroll(); {
-element.scrollTo({
-    top: 100,
-    left: 100,
-    behavior: 'smooth'
-  });
-}
-
-scroll()
