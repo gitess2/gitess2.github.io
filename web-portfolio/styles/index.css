@@ -1,167 +1,194 @@
 body {
-  margin: 0;
-  background-color: #fdf5ef;
+    margin: 0;
+    font-family: 'Oxygen', sans-serif;
+    background-color: #fbf8f5;
 }
-
-:root {
-  --g1: #CC99FF;
-  --g2: #A9D1F7;
-  --g3: #B4F0A7;
-  --g4: #FFFFBF;
-  --g5: #FFDFBE;
-  --g6: #FFB1B0;
-  }
-
-  header {
-    background: linear-gradient( to right, var(--g1), var(--g2), var(--g3), var(--g4), var(--g5), var(--g6), var(--g5), var(--g4), var(--g3), var(--g2), var(--g1) );
-    height: 100vh;
-    overflow: hidden;
-    margin: 0px;
-  }
-
-  h1 {
-    text-align: center;
-  }
-  
-  #tiles {
-    /* height: calc(100vh - 1px); */
-   /* width: calc(100vw - 1px); */
-   height: 1000px;
-   width: 2000px; 
-   /* Javascript viewport whatever or  */
+header {
     position: relative;
-    z-index: 2;
-    display: grid;
-    grid-template-columns: repeat(var(--columns), 1fr);
-    grid-template-rows: repeat(var(--rows), 1fr);
-  }
-  
-  .tile {
+    z-index: 10;
+    background-color: rgb(12, 12, 12);
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    margin: 0;
+}
+#heart {
+    color: #FF4242;
     cursor: pointer;
-    position: relative;
-  }
-  
-  .tile:hover:before {
-    background-color: #201f22;
-  }
-  
-  .tile:before {
-    background-color: #161517;
-    content: "";
-    inset: 0.5px;
+}
+#heart > svg {
+    height: 40px;
+    width: auto;
+    margin: .6rem;
+    margin-left: 1.2rem;
+    margin-right: 1rem;
+}
+@keyframes colorChange {
+    0% {color: #FF4242;}
+    25% {color: #FB62F6;}
+    50% {color: #3ec4c0;}
+    75% {color: #53d56f;}
+    100% {color: #FF4242;}
+}
+#heart > svg:hover {
+    animation-name: colorChange;
+    animation-duration: 1.25s;
+}
+h1 {
+    font-family: 'Times New Roman', Times, serif;
+    color: whitesmoke;
+}
+li {
+    display: inline-block;
+    margin-right: 2rem;
+    margin-left: -1rem;
+}
+li > i {
+    color: whitesmoke;
+}
+#digital-clock {
+    color: whitesmoke;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.75rem;
+    font-weight: 700;
+    margin-left: auto;
+    margin-right: 1.2rem;
+}
+body, html { 
+    overflow: hidden; 
+}
+#content {
+    margin: 0;
+    min-height: 100vh;
+    background-image: url("../images/background.svg");
+    background-size: cover;
+    background-repeat: no-repeat;;
+}
+#mainWindow {
+    margin: 0;
     position: absolute;
-  }
-  
-  #title:before {
-    top: 30%; 
-  }
-
-  #title {
-    left: 50%;
-    position: absolute;
-    top: 40%;
-    transform: translate(-50%, -50%);
-    color: white;
-    font-family: "Rubik", sans-serif;
-    font-size: 6vw;
-    margin: 0px;
-    pointer-events: none;
-    width: 50vw;
+    left: 4%;
+    top: 23%;
+    height: 500px;
+    width: 550px;
+    background-color: rgba(0,0,0,0.5);
+    border-radius: 5px;
+    box-shadow: 4px 4px 5px rgba(0,0,0,0.8);
+}
+.mainWindowFront {
     z-index: 3;
-  }
-  h2 {
-    position: absolute;
-    overflow: hidden;
-    display: block;
-    right: 50%;
-    transform:translateX(30%);
-    top: 60%;
-    width: 4rem;
+}
+.mainWindowBack {
+    z-index: 1;
+}
+.notesAppFront {
     z-index: 3;
-    filter: drop-shadow( 2px 2px 4px #CC99FF);
-    pointer-events: none;
-  }
-
-.textOutline {
-  text-shadow: 2px 2px 4px #CC99FF;
-  pointer-events: none;
+}
+.notesAppBack {
+    z-index: 1;
+}
+#mainNav {
+    display: grid;
+    place-items: center;
+    align-content: center;
+    grid-template-rows: 1fr;
+    grid-template-columns: 14fr 1fr 1fr 1fr;
+    height: 2rem;
+    width: 550px;
+    background-color: #2b2a32;
+    border-radius: 5px 5px 0 0;
+}
+h2 {
+    margin: 0;
+    padding-left: 2rem;
+    padding-top: 2rem;
+}
+#mainTitle {
+    color: whitesmoke;
+}
+#circle1, #circle2, #circle3 {
+    grid-row: 1;
+    height: 18px;
+    width: 18px;
+    background-color: #bbb;
+    border-radius: 50%;
+}
+#circle1 {
+    grid-column: 2;
+    background-color: rgb(112, 177, 89);
+    color: #2b2a32;
+}
+#circle2 {
+    grid-column: 3;
+    background-color: #e2b149;
+    color: #2b2a32;
+}
+#circle3 {
+    grid-column: 4;
+    background-color: #e8685d;
+    color: #2b2a32;
+}
+#folderDiv {
+    position: absolute;
+    right: 4%;
+    top: 49%;
+    z-index: 0;
+}
+#folderDiv > p {
+    padding: 6px;
+    width: 65px;
+    margin-top: 4px;
+    font-weight: 600;
+    text-align: center;
+    margin-left:-3px;
+}
+#githubDiv {
+    position: absolute;
+    right: 4%;
+    top: 15%;
+    z-index: 0;
+}
+#githubDiv > p {
+    padding: 6px;
+    width: 65px;
+    margin-top: 4px;
+    font-weight: 600;
+    text-align: center;
+    margin-left:-6px;
+}
+#instaDiv {
+    position: absolute;
+    right: 4%;
+    top: 32%;
+    z-index: 0;
+}
+#instaDiv > p {
+    padding: 6px;
+    width: 65px;
+    margin-top: 4px;
+    font-weight: 600;
+    text-align: center;
+    margin-left:-6px;
 }
 
-.fadeIn {
-  animation: fades 1.7s;
+#notesApp {
+    margin: 0;
+    position: absolute;
+    right: 17%;
+    top: 15%;
+    height: 515px;
+    width: 425px;
+    background-color: rgb(241, 239, 235);
+    box-shadow: 4px 4px 5px rgba(0,0,0,0.5);
+    z-index: 1;
 }
-
-@keyframes fades {
-  0% { opacity: 0; }
- 100% { opacity: 1; }
-} 
-
-/* Qualifications */
-
-.qualification {
-  height: 100vh;
-  width: 100%;
-  float:left;
-  clear:none;
-  display: grid;
-  align-content: center ;
-  justify-content: center;
-  row-gap: 4rem;
-  background-color: #fdf5ef;
-  padding-bottom: 2rem;
-} 
-
-.slideQualification {
-  z-index: 3;
-  display: flex;
-  gap: 5rem;
-  flex-direction: row;
-  align-items: center;
-  align-content: center;
-  transform: translateX(50px);
-}
-
-#htmlIcon, #cssIcon, #jsIcon {
-  height: 150px;
-  width: 150px;
-  margin-left: 12rem;
-  margin-right: 1rem;
-  z-index: 1;
-}
-
-#htmlDesc, #cssDesc, #jsDesc {
-  font-size: 2rem;
-  margin-right: 16rem;
-  margin-left: 1rem;
-  overflow-wrap: normal;
-  max-width: 8rem;
-  z-index: 1;
-}
-
-@media screen and (max-width: 900px) {
-  
-}
-
-@media screen and (max-height: 600px) {
-
-}
-
-
-#visualColor {
-  width: 100%;
-  float: left;
-  clear:none;
-  margin-top: -8rem;
-  z-index: 3;
-}
-
-
-/* Slideshow div */
-
-.slideshowContainer {
-  float:left;
-  clear:none;
-  background-color: #86bed8;
-  height: 90vh;
-  width: 100%;
+#notesNav {
+    display: grid;
+    place-items: center;
+    align-content: center;
+    grid-template-rows: 1fr;
+    grid-template-columns: 13fr 1fr 1fr 1fr;
+    height: 2rem;
+    width: 425px;
+    background-color: rgb(247, 208, 77);
 }
