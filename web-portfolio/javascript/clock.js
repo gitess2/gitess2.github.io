@@ -8,33 +8,21 @@ function Time() {
     // Get current minute
     var minute = date.getMinutes();
     
-    // Variable to store AM / PM
-    var period = "";
-    
-    // Assigning AM / PM according to the current hour
-    if (hour >= 12) {
-    period = "PM";
-    } else {
-    period = "AM";
-    }
-    
-    // Converting the hour in 12-hour format
-    if (hour == 0) {
+    /* if (hour == 0) {
     hour = 12;
     } else {
     if (hour > 12) {
     hour = hour - 12;
     }
-    }
+    } */
     
-    // Updating hour, minute, and second
+    // Updating hour and minutes
     // if they are less than 10
     hour = update(hour);
     minute = update(minute);
     
     // Adding time elements to the div
-    document.getElementById("digital-clock").innerText = hour + " : " + minute + " " + period;
-    
+    document.getElementById("digital-clock").innerText = hour + " : " + minute;
     // Set Timer to 1 sec (1000 ms)
     setTimeout(Time, 1000);
     }

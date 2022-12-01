@@ -73,6 +73,7 @@ body, html {
     width: 550px;
     background-color: rgba(0,0,0,0.5);
     border-radius: 5px;
+    -webkit-box-shadow: 4px 4px 5px rgba(0,0,0,0.5);
     box-shadow: 4px 4px 5px rgba(0,0,0,0.8);
 }
 .mainWindowFront {
@@ -148,7 +149,11 @@ h2 {
     top: 15%;
     z-index: 0;
 }
-#githubDiv > p {
+#githubDiv > a {
+    text-decoration: none;
+    color: black;
+}
+#githubDiv > a > p {
     padding: 6px;
     width: 65px;
     margin-top: 4px;
@@ -162,7 +167,11 @@ h2 {
     top: 32%;
     z-index: 0;
 }
-#instaDiv > p {
+#instaDiv > a {
+    text-decoration: none;
+    color: black;
+}
+#instaDiv > a > p {
     padding: 6px;
     width: 65px;
     margin-top: 4px;
@@ -179,6 +188,7 @@ h2 {
     height: 515px;
     width: 425px;
     background-color: rgb(241, 239, 235);
+    -webkit-box-shadow: 4px 4px 5px rgba(0,0,0,0.5);
     box-shadow: 4px 4px 5px rgba(0,0,0,0.5);
     z-index: 1;
 }
