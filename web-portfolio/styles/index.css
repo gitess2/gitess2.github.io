@@ -254,8 +254,8 @@ h3 {
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    padding-left: 2rem;
-    padding-right: 2rem;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
     padding-top: 2rem;
 }
 #contact > a {
@@ -283,8 +283,8 @@ h3 {
 #mail:hover .fa-envelope-open {
     display: inline;
 } 
-#contact > a button:hover {
-    transform: scale(1.075);
+#contact > a:hover {
+    transform: scale(1.05);
 }
 #nameContact {
     font-weight: 700;
