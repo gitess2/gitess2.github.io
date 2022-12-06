@@ -52,7 +52,7 @@ li > i {
     font-size: 1.75rem;
     font-weight: 700;
     margin-left: auto;
-    margin-right: 1.2rem;
+    margin-right: 1.5rem;
 }
 body, html { 
     overflow: hidden; 
@@ -62,7 +62,7 @@ body, html {
     min-height: 100vh;
     background-image: url("../images/background.svg");
     background-size: cover;
-    background-repeat: no-repeat;;
+    background-repeat: no-repeat;
 }
 #notesApp > h4, #notesApp > a {
     margin-left: 2rem;
@@ -78,6 +78,7 @@ body, html {
     border-radius: 5px;
     -webkit-box-shadow: 4px 4px 5px rgba(0,0,0,0.5);
     box-shadow: 4px 4px 5px rgba(0,0,0,0.8);
+    cursor:default;
 }
 h2 {
     font-size: 2.7rem;
@@ -137,6 +138,7 @@ h2 {
     width: 550px;
     background-color: #2b2a32;
     border-radius: 5px 5px 0 0;
+    cursor:default;
 }
 #mainTitle {
     color: whitesmoke;
@@ -220,12 +222,13 @@ h2 {
     position: absolute;
     right: 17%;
     top: 15%;
-    height: 505px;
+    height: 515px;
     width: 425px;
     background-color: rgb(241, 239, 235);
     -webkit-box-shadow: 4px 4px 5px rgba(0,0,0,0.5);
     box-shadow: 4px 4px 5px rgba(0,0,0,0.5);
     z-index: 1;
+    cursor:default;
 }
 #notesNav {
     display: grid;
@@ -236,6 +239,7 @@ h2 {
     height: 2rem;
     width: 425px;
     background-color: rgb(245, 198, 69);
+    cursor:default;
 }
 h3 {
     font-size: 1.6rem;
@@ -289,4 +293,9 @@ h3 {
 #nameContact {
     font-weight: 700;
     font-size: 1.2rem;
+}
+#folderDiv > a{
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
 }
