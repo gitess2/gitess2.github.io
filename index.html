@@ -4,52 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TestNet</title>
+    <title>Document</title>
 </head>
 <body>
-    
-<script>
-
-const CLIENT_ID = "022ed3bc6b0b4cb3be93a24beb0c9e99"
-const CLIENT_SECRET = "52def31a89c54b308c90bc9c604a65eb"
-const REDIRECT_URI = "http://localhost:5500"
-
-const CODE = "AQAwwpLWYgalNq905jwpt730z0EmN8ocV_Vf318F4NUO8sgDKFHq0mv_T3AUyawsds_BOac5Ftk77cINiXprBZTeQIE9WHA00iaZ9RuxDJpUFCrdtqYloFnt7gwuXBLJF2mwD39jOSvCZ7sRBOOaFs4CO7bOTTpkRg"
-
-// First send a GET request to the spotify endpoint
-
-// Wants client_id, response type and redirect uri
-
-/*
-function requestAuthorization() {
-    let url = 'https://accounts.spotify.com/en/authorize?client_id=022ed3bc6b0b4cb3be93a24beb0c9e99&response_type=code&redirect_uri=http://localhost:5500&scope=user-read-currently-playing';
-    // location.href = url;
-}
-*/
-
-// Returns:
-// http://localhost:5500/?code=AQAwwpLWYgalNq905jwpt730z0EmN8ocV_Vf318F4NUO8sgDKFHq0mv_T3AUyawsds_BOac5Ftk77cINiXprBZTeQIE9WHA00iaZ9RuxDJpUFCrdtqYloFnt7gwuXBLJF2mwD39jOSvCZ7sRBOOaFs4CO7bOTTpkRg
-
-const AUTHORIZE = "https://accounts.spotify.com/authorize"
-
-function requestAuthorization() {    
-    let url = AUTHORIZE;
-    url += "?client_id=022ed3bc6b0b4cb3be93a24beb0c9e99";
-    url += "&response_type=code";
-    url += "&redirect_uri=http://localhost:5500" 
-    url += "&scope=user-read-currently-playing";ß
-    window.location.href = url;
-}
-
-const currentlyPlaying_Url = "https://api.spotify.com/v1/me/player/currently-playing";
-
-
-fetch(currentlyPlaying_Url)
-    .then(response => response.json())
-    .then(responseJson => console.log(response.json))
-
-
-</script>
-
+    <img src="atlas-trainer.jpg">
 </body>
 </html>
